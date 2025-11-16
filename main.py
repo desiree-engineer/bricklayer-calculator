@@ -36,9 +36,9 @@ elif selecao==3:
 elif selecao==4:
     desnivel=(float(input("Digite o valor do desnivel em centimetros ")))
     comprimento= (float(input("Digite o comprimentro em metros ")))
-    inclinacao=(desnivel/comprimento)*100
+    inclinacao=(desnivel/(comprimento*100))*100
     print("Iniciando Cálculo de inclinação...")
-    printi(f"A inclinação é de {inclinacao}%")
+    print(f"A inclinação é de {inclinacao}%")
 elif selecao==5:
     centimetro= (float(input("Digite os centimetros ")))
     metros= centimetro/100
@@ -48,7 +48,7 @@ elif selecao==6:
     metro= (float(input("Digite o metro(s) ")))
     centimetro= metro*100
     print("Iniciando Conversão de metro para centimetro...")
-    print(f"{metros}metro(s) é igual a {centimetro}centimetro(s) ")
+    print(f"{metro}metro(s) é igual a {centimetro}centimetro(s) ")
 elif selecao==7:
     metro2= (float(input("Digite o m2 ")))
     centimetro2= metro2*10000
@@ -56,6 +56,6 @@ elif selecao==7:
     print(f"{metro2}m2 é igual a {centimetro2}cm2(s) ")
 else:
     centimetro2= (float(input("Digite o cm2 ")))
-    metro2= metro2*10000
+    metro2= centimetro2/10000
     print("Iniciando Conversão de cm2 para m2...")
     print(f"{centimetro2}cm2 é igual a {metros2}m2")
